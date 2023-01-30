@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+        .background {
+            background-image: url(background2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            transform: scaleX(-1);
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <div class = "background"></div>
+    <div class = "content">
+        <h1>Your Name</h1>
+        <img src="my-picture.jpg" alt="My picture">
+        <p>"There is no 'try', only 'do'."</p>
+        <button id="aboutButton">Learn More</button>
+    </div>
+    <script>
+      const button = document.querySelector('#aboutButton');
+      button.addEventListener('click', function() {
+        window.location.href = 'aboutme.html';
+      });
+    </script>
+  </body>
+</html>
