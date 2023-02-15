@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class = "background">
+        <style>
+            header {
+                font-family: 'Trebuchet MS', Helvetica, sans-serif;
+                background-color: #333;
+                color: #fff;
+                padding: 1em;
+            }
+            .background {
+                background-image: url("images/background2.jpg");
+                background-size: cover;
+                position: absolute;
+                height: 100vh;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            .skillslist {
+                padding: 10px;
+                background-color: rgb(44, 42, 42);
+                color: rgb(47, 149, 197);
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px #888;
+                list-style-position: inside;
+            }
+            .header1 {
+                display: flex;
+                align-items: center;
+            }
+            .slide-in { /* Class to make elements of the page slide in from the right. */
+                opacity: 0;
+                transform: translateX(100%);
+                animation: slide-in 1s forwards;
+            }
+            @keyframes slide-in {
+                from {
+                    opacity: 0;
+                    transform: translateX();
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+            }
+            .fade-in {
+                opacity: 0;
+                transition: opacity 1s;
+            }
+            .fade-in.show {
+                opacity: 1;
+            }
+        </style>
+        </div>
+    </head>
+    <script src = "mainjs/fade-in.js"></script>
+    <body>
+        <div class = "header1">
+            <h1>Skills and Technologies</h1>
+        </div>
+        <ul class = "skillslist">
+            <li>Familiar with many languages such as C, C#, Java, HTML, CSS, Javascript, Python and SQL.</li>
+            <li>A plethora of personal experience with hardware, software troubleshooting, remote team 
+              platforms and networking.
+            </li>
+            <li>Familiar with Git and version control.</li>
+            <li>Proficient in operating systems such as Windows and Linux.</li>
+            <li>Proficient with Microsoft Office applications such as Word, Excel and Powerpoint.</li>
+            <li>Very experienced and skilled in customer service, adept in client facing roles.</li>
+          </ul>
+    </body>
+</html>

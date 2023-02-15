@@ -1,3 +1,7 @@
 document.getElementById("myImage").addEventListener("click", function() {
-    this.src = this.src === "my-picture.jpg" ? "obamna.png" : "my-picture.jpg";
-  });
+  const img = document.getElementById("myImage");
+  const newSrc = (img.getAttribute("src") === "images/my-picture.jpg") ? "images/obamna.png" : "images/my- picture.jpg";
+  img.setAttribute("src", newSrc);
+});
+
+
