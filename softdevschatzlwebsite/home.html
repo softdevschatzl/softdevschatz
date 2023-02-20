@@ -45,6 +45,7 @@
             object-fit: cover;
             transition: transform 0.8s;
             border: 5px solid black;
+            margin-left: 12%;
         }
 
         .flipped {
@@ -121,7 +122,12 @@
             font-size: larger;
         }
         .flip-image {
-            transform: scale(-1, 1);
+            width: 300px;
+            height: 300px;
+            transition: transform 0.5s;
+        }
+        .flip-image.flip {
+            transform: rotateY(180deg);
         }
 
         .btn-open:focus + .menu-content {

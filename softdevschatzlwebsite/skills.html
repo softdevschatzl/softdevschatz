@@ -3,23 +3,50 @@
     <head>
         <div class = "background">
         <style>
+            @media only screen and (min-width: 768px) {
+                .container-lists {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .skillslist {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            }
+            
+            header h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
             header {
                 font-family: 'Trebuchet MS', Helvetica, sans-serif;
                 background-color: #333;
                 color: #fff;
                 padding: 1em;
+                margin: 0;
+            }
+            .container-lists {
+                display: flex;
+                flex-direction: column;
             }
             .background {
                 background-image: url("images/background2.jpg");
                 background-size: cover;
                 position: absolute;
-                height: 100vh;
+                height: 100%;
                 width: 100%;
                 top: 0;
                 left: 0;
                 z-index: -1;
             }
             .skillslist {
+                font-family: 'Trebuchet MS', Helvetica, sans-serif;
                 padding: 10px;
                 background-color: rgb(44, 42, 42);
                 color: rgb(47, 149, 197);
@@ -27,9 +54,37 @@
                 box-shadow: 2px 2px 10px #888;
                 list-style-position: inside;
             }
+            .explevel {
+                display: inline-block;
+                border-bottom: 3px solid rgb(47, 149, 197) ;
+            }
             .header1 {
                 display: flex;
                 align-items: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .header2 {
+                font-family: 'Trebuchet MS', Helvetica, sans-serif;
+                border-bottom: 3px solid black;
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+            }
+            .homeButton {
+                background-color: rgb(44, 42, 42);
+                color: rgb(17, 202, 202);
+                margin-left: 10px;
+                height: 30px;
+                width: 30px;
+                font-size: 15px;
+                border-radius: 30px;
+            }
+            .homeButton:hover {
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                font-size: larger;
             }
             .slide-in { /* Class to make elements of the page slide in from the right. */
                 opacity: 0;
@@ -58,18 +113,36 @@
     </head>
     <script src = "mainjs/fade-in.js"></script>
     <body>
-        <div class = "header1">
-            <h1>Skills and Technologies</h1>
+        <header>
+            <div class = "header1 fade-in">
+              <h1>Skills / Technologies</h1>
+              <a href = "menu.html">
+                <button id = "homeButton" class = "homeButton">⌂</button>
+              </a>
+            </div>
+        </header>
+        <div class = "container-lists slide-in">
+            <h2 class = "header2">Languages</h2>
+            <ul class = "skillslist">
+            <h3 class = "explevel">Proficient</h3>
+            <li>C</li>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Kotlin/XML</li>
+            <h3 class = "explevel">Familiar</h3>
+            <li>C#</li>
+            <li>Python</li>
+            <li>SQL</li>
+            </ul>
+            <h2 class = "header2">General Skills</h2>
+            <ul class = "skillslist">
+                <li>A plethora of personal experience with hardware, software troubleshooting, remote team 
+                    platforms and networking.</li>
+                <li>Proficient working with operating systems such as Windows and Linux (learning Mac)</li>
+                <li>Proficient with Microsoft Office applications such as Word, Excel, etc.</li>
+                <li>Very experienced and skilled in customer service, adept in client facing roles.</li>
+            </ul>
         </div>
-        <ul class = "skillslist">
-            <li>Familiar with many languages such as C, C#, Java, HTML, CSS, Javascript, Python and SQL.</li>
-            <li>A plethora of personal experience with hardware, software troubleshooting, remote team 
-              platforms and networking.
-            </li>
-            <li>Familiar with Git and version control.</li>
-            <li>Proficient in operating systems such as Windows and Linux.</li>
-            <li>Proficient with Microsoft Office applications such as Word, Excel and Powerpoint.</li>
-            <li>Very experienced and skilled in customer service, adept in client facing roles.</li>
-          </ul>
     </body>
 </html>

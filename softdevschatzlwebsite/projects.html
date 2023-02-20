@@ -107,6 +107,11 @@
             .fade-in.show {
                 opacity: 1;
             }
+            @media only screen and (max-width: 1170px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
         </style>
     </head>
     <script src = "mainjs/fade-in.js"></script>
@@ -121,33 +126,35 @@
         </header>
         <main>
             <section id="projects">
-                <h2>My Projects</h2>
-                <p>As such, more in-depth analyses of my projects can be found on my 
-                    <a href = "https://github.com/theschatzinator" target = "_blank"><strong>GitHub</strong></a> profile.</p>
-                <div style = "display: flex; flex-wrap: wrap;">
-                    <div style = "flex: 1;">
-                        <h3>Project 1: Banking Client/Server Application</h3>
-                        <img src="images/bankingpic.png" alt="Project 1" style = "width: 75%">
-                        <p class = "projectpara">This program is a very simple and easy to understand use of socket programming
-                        and server-client functionality. I only created this project to exemplify my 
-                        familiarity in network programming and establishing server and client connections. Including
-                        functionalities such as generating a unique user ID upon the creation of a username and password
-                        login (stored in the server relational database using MySQL) and including functionality for 
-                        withdrawals, deopsits and checking balance.
+                <div class = "container">
+                    <h2>My Projects</h2>
+                    <p>As such, more in-depth analyses of my projects can be found on my 
+                        <a href = "https://github.com/theschatzinator" target = "_blank"><strong>GitHub</strong></a> profile.</p>
+                    <div style = "display: flex; flex-wrap: wrap;">
+                        <div style = "flex: 1;">
+                            <h3>Project 1: Banking Client/Server Application</h3>
+                            <img src="images/bankingpic.png" alt="Project 1" style = "width: 75%">
+                            <p class = "projectpara">This program is a very simple and easy to understand use of socket programming
+                            and server-client functionality. I only created this project to exemplify my 
+                            familiarity in network programming and establishing server and client connections. Including
+                            functionalities such as generating a unique user ID upon the creation of a username and password
+                            login (stored in the server relational database using MySQL) and including functionality for 
+                            withdrawals, deopsits and checking balance.
+                            </p>
+                        </div>
+                        <div style = "flex: 1;">
+                            <h3>Project 2: Haptics Feedback Reducer</h3>
+                            <img src = "images/controllers.png" alt="Project 2" style = "width: 75%;">
+                            <p class = "projectpara">For a while I struggled with reducing the haptic feedback on many of my controllers
+                            that I use as vibration and related feedbacks degrade the devices internals and can
+                            lead to a reduced lifespan. To solve this problem, I wrote a script in C# that 
+                            disables this feedback on Xbox controllers. I was planning on continuing forward
+                            and adding some functionality for button remapping etc. but then I realized that 
+                            Microsoft actually has an app for such endeavors. Some time in the future I would 
+                            like to alter this to link the controller as a universal controller to manipulate the 
+                            cursor and not only be useful in games.
                         </p>
-                    </div>
-                    <div style = "flex: 1;">
-                        <h3>Project 2: Haptics Feedback Reducer</h3>
-                        <img src = "images/controllers.png" alt="Project 2" style = "width: 75%;">
-                        <p class = "projectpara">For a while I struggled with reducing the haptic feedback on many of my controllers
-                        that I use as vibration and related feedbacks degrade the devices internals and can
-                        lead to a reduced lifespan. To solve this problem, I wrote a script in C# that 
-                        disables this feedback on Xbox controllers. I was planning on continuing forward
-                        and adding some functionality for button remapping etc. but then I realized that 
-                        Microsoft actually has an app for such endeavors. Some time in the future I would 
-                        like to alter this to link the controller as a universal controller to manipulate the 
-                        cursor and not only be useful in games.
-                    </p>
+                        </div>
                     </div>
                 </div>
               </section>
