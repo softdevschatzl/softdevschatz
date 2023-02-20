@@ -1,0 +1,108 @@
+ /* Adding some basic styling and formatting */
+ title { /* not even sure what this is for */
+    font-family: Georgia, serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1em;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    flex: 1;
+    margin: 1em;
+}
+section img {
+    max-width: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+img {
+    width: 600px;
+    height: 400px;
+}
+.background3image {
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.projectpara {
+    margin-left: 10px; 
+    width: 75%; 
+    border: 5px solid black;
+    background-color: rgb(44, 42, 42);
+    color: rgb(47, 149, 197);
+    border-radius: 5px;
+}
+.homeButton {
+    background-color: rgb(44, 42, 42);
+    color: rgb(17, 202, 202);
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.header1 {
+    display: flex;
+    align-items: center;
+}
+.homeButton:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: larger;
+}
+.slide-in { /* Class to make elements of the page slide in from the right. */
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX();
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.fade-in.show {
+    opacity: 1;
+}
+@media only screen and (max-width: 1170px) {
+    .container {
+        flex-direction: column;
+    }
+}
