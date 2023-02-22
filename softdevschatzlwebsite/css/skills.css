@@ -1,19 +1,28 @@
 @media (min-width: 768px) {
-    .grid-container {
-        grid-template-rows: repeat(2, 1fr);
+    .flex-container {
+        flex-direction: column;
     }
 }
 
-.grid-container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+.flex-container {
+    display: flex;
+    margin: 0 10px;
+}
+
+.left-column {
+    float: left;
+    flex-direction: column;
+}
+
+.right-column {
+    float: right;
+    flex-direction: column;
 }
 
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header h1 {
