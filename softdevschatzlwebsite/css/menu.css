@@ -1,7 +1,20 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+  .menu-content {
+    flex-direction: column;
+    padding: 0;
+  }
+  .menu-item {
+    font-size: 15px;
+  }
+}
+
+
 body {
     background-image: url("../images/background2.jpg");
     background-size: cover;
-    position: relative;
     height: 100vh;
     width: 100vw;
     top: 0;

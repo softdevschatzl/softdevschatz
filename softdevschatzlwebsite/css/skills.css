@@ -1,22 +1,36 @@
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .flex-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
 .flex-container {
     display: flex;
     margin: 0 10px;
+    position: relative;
 }
 
 .left-column {
+    order: 1;
     float: left;
-    flex-direction: column;
+    margin-right: 10px;
+    flex: 1;
+    position: relative;
 }
 
 .right-column {
+    order: 2;
     float: right;
-    flex-direction: column;
+    margin-left: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.bottom-row {
+    order: 3;
+    position: absolute;
+    margin-top: 390px;
+    flex-direction: row;
 }
 
 body {
@@ -57,7 +71,7 @@ header {
 }
 .explevel {
     display: inline-block;
-    border-bottom: 3px solid rgb(47, 149, 197) ;
+    border-bottom: 3px solid rgb(47, 149, 197);
 }
 .header1 {
     display: flex;
@@ -71,6 +85,15 @@ header {
     display: inline-block;
     margin: 10px;
     padding: 10px;
+}
+
+.employer {
+    font-weight: bold;
+    border-bottom: 1px solid rgb(47, 149, 197);
+}
+
+.experience-item {
+    padding-top: 1rem;
 }
 .homeButton {
     background-color: rgb(44, 42, 42);
