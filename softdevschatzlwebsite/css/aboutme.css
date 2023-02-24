@@ -170,6 +170,7 @@ footer {
   .socialimage {
     height: auto;
     width: 15%;
+    margin-right: 5px;
   }
 
   .personal {

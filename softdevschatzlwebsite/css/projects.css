@@ -42,6 +42,12 @@ img {
     width: 600px;
     height: 400px;
 }
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .background3image {
     background-image: url(../images/background2.jpg);
     background-size: cover;
@@ -52,13 +58,23 @@ img {
     left: 0;
     z-index: -1;
 }
+
+.project-item {
+    display: flex; 
+    flex-wrap: wrap;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: rgb(84, 157, 186);
+}
 .projectpara {
+    display: flex;
+    justify-content: center;
     margin-left: 10px; 
     width: 75%; 
-    border: 5px solid black;
-    background-color: rgb(44, 42, 42);
-    color: rgb(47, 149, 197);
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 40px;
 }
 .homeButton {
     background-color: rgb(44, 42, 42);

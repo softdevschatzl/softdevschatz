@@ -1,8 +1,22 @@
 @media (max-width: 768px) {
     .flex-container {
+        flex-direction: column;
+    }
+    .left-column {
         flex-direction: row;
     }
-}
+    .right-column {
+        flex-direction: row;
+    }
+    .bottom-row {
+        flex-direction: row;
+        bottom: -350px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+} 
 
 .flex-container {
     display: flex;
