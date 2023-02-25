@@ -6,6 +6,7 @@
         <link rel = "stylesheet" type = "text/css" href = "../css/projects.css"
     </head>
     <script src = "../mainjs/fade-in.js"></script>
+    <script src = "../mainjs/spanfade.js"></script>
     <body>
         <header>
             <div class = "header1">
@@ -13,32 +14,33 @@
                 <a href = "menu.html">
                     <button id = "homeButton" class = "homeButton">⌂</button>
                 </a>
+                <span class = "h1span"><strong style="font-size:large"><---</strong> Menu</span>
             </div>
         </header>
         <main>
             <section id="projects">
-                <div class = "container">
+                <div class = "container slide-in">
                     <h2>My Projects</h2>
-                    <p>As such, more in-depth analyses of my projects can be found on my 
-                        <a href = "https://github.com/theschatzinator" target = "_blank"><strong>GitHub</strong></a> profile.</p>
                     <div style = "display: flex; flex-wrap: wrap;">
-                        <div class = "project-item">
-                            <h3>Project 1: Banking Client/Server Application</h3>
-                            <p class = "projectpara">Simple banking application
-                                that simulates deposit, withdrawal, and checking
-                                balance functions. Back-end serverside application.
-                            </p>
+                        <div class = "cloud">
+                            <a href = "https://github.com/theschatzinator/bankingapplication" target="_blank">
+                                <button></button>
+                            </a>
+                            <h3>Project 1:</h3>
+                            <p class = "projectpara">Banking Client/Server Application</p>
                         </div>
-                        <div class = "project-item">
-                            <h3>Project 2: Haptics Feedback Reducer</h3>
-                            <p class = "projectpara">Simple C# file that disables
-                                haptic feedback on external devices.
-                            </p>
+                        <div class = "cloud">
+                            <a href = "https://github.com/theschatzinator/shakey-no-more" target="_blank">
+                                <button></button>
+                            </a>
+                            <h3>Project 2:</h3>
+                            <p class = "projectpara">Haptic Feedback Reduction</p>
                         </div>
                     </div>
                 </div>
               </section>
         </main>
         <script src = "../mainjs/homebutton.js"></script>
+        <script src = "../mainjs/menunotifier.js"></script>
     </body>
 </html>

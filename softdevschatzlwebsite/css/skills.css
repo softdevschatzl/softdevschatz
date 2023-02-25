@@ -43,7 +43,7 @@
 .bottom-row {
     order: 3;
     position: absolute;
-    margin-top: 390px;
+    bottom: -30vh;
     flex-direction: row;
 }
 
