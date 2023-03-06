@@ -2,7 +2,20 @@
     of the styling to fit smaller resolution screens. Maybe 
     replacing the pixel measurements with % measurements
     instead will yield better responsive results?*/
-    body {
+
+    @media only screen and (max-width: 768px) {
+        .my-picture {
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
         position: relative;
         display: flex;
         align-items: center;
@@ -13,11 +26,6 @@
         padding-top: 20;
         margin: 0;
         padding: 0;
-    }
-
-    header {
-        display: flex;
-        flex-direction: row;
     }
 
     .backgroundimage {
@@ -69,7 +77,8 @@
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
         border-bottom: 3px solid black;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 3vh;
+        text-align: center;
     }
 
     .name {
